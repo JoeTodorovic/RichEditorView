@@ -143,7 +143,7 @@ public enum RichEditorDefaultOption: RichEditorOption {
         case .alignRight: return NSLocalizedString("Right", comment: "")
         case .image: return NSLocalizedString("Image", comment: "")
         case .link: return NSLocalizedString("Link", comment: "")
-        case .paragraf: return NSLocalizedString("H4", comment: "")
+        case .paragraf: return NSLocalizedString("P", comment: "")
         }
     }
     
