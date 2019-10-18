@@ -417,3 +417,7 @@ RE.getRelativeCaretYPosition = function() {
 
     return y;
 };
+
+RE.setParagraf = function() {
+    document.execCommand('formatBlock', false, 'p');
+};

@@ -341,6 +341,10 @@ import UIKit
     public func blur() {
         runJS("RE.blurFocus()")
     }
+    
+    public func paragraf() {
+        runJS("RE.setParagraf();")
+    }
 
     /// Runs some JavaScript on the UIWebView and returns the result
     /// If there is no result, returns an empty string
