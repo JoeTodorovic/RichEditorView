@@ -227,6 +227,7 @@ import UIKit
 
     public func removeFormat() {
         runJS("RE.removeFormat();")
+        runJS("RE.setParagraf();")
     }
     
     public func setFontSize(_ size: Int) {
