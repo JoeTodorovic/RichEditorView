@@ -446,9 +446,9 @@ import UIKit
     /// For example, if the cursor is directly at the top of what is visible, it will return 0.
     /// This also means that it will be negative if it is above what is currently visible.
     /// Can also return 0 if some sort of error occurs between JS and here.
-    private var relativeCaretYPosition: Int {
+    private var relativeCaretYPosition: Float {
         let string = runJS("RE.getRelativeCaretYPosition();")
-        return Int(string) ?? 0
+        return Float(string) ?? 0
     }
 
     private func updateHeight() {
@@ -487,7 +487,7 @@ import UIKit
         }
 
         if let offset = offset {
-            scrollView.setContentOffset(offset, animated: true)
+            scrollView.setContentOffset(offset, animated: false)
         }
     }
     
